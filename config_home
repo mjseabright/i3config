@@ -34,19 +34,19 @@ floating_modifier $mod
 bindsym $mod+Return exec gnome-terminal
 
 # start a browser
-bindsym $mod+bracketleft exec vivaldi
+bindsym $mod+bracketleft exec firefox
 
 # start sublime
 bindsym $mod+bracketright exec subl
 
 # start nautilus
-bindsym $mod+backslash exec "nautilus --no-desktop"
+bindsym $mod+backslash exec "nautilus"
 
 # lock screen
-bindsym $mod+Escape exec "i3lock -i ~/suzyImages/suzy-lock.png"
+bindsym $mod+Escape exec "i3lock -c 111111"
 
 # hibernate
-bindsym $mod+Shift+Escape exec "i3lock -i ~/suzyImages/suzy-lock.png; sudo pm-suspend-hybrid"
+bindsym $mod+Shift+Escape exec "i3lock -c 111111; sudo pm-suspend-hybrid"
 
 # change volume
 bindsym Control+Mod1+Down exec "pactl set-sink-volume 1 -1%"
