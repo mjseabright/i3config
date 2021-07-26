@@ -40,7 +40,10 @@ bindsym $mod+bracketleft exec firefox
 bindsym $mod+bracketright exec subl
 
 # start nautilus
-bindsym $mod+backslash exec "nautilus"
+bindsym $mod+backslash exec nautilus
+
+# start spotify
+bindsym $mod+apostrophe exec spotify
 
 # lock screen
 bindsym $mod+Escape exec "i3lock -c 111111"
@@ -196,3 +199,5 @@ client.urgent #eb709b #eb709b #ffffff #eb709b
 workspace 1 output DP-4
 
 exec --no-startup-id xsetroot -solid "#222222"
+
+exec --no-startup-id bash ~/.screenlayout/default_home.sh
